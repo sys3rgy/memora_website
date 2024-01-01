@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Chillax-Regular";
+    src: url("/public/fonts/Chillax-Regular.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Chillax-Light";
+    src: url("/public/fonts/Chillax-Light.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Chillax-Extralight";
+    src: url("/public/fonts/Chillax-Extralight.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Chillax-Medium";
+    src: url("/public/fonts/Chillax-Medium.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Chillax-Bold";
+    src: url("/public/fonts/Chillax-Bold.woff") format("woff");
+  }
+}

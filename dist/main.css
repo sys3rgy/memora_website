@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scroller {
+  max-height: 600px;
+}
+
+.scroller__inner {
+  /* padding-block: 1rem; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  /* -webkit-mask: linear-gradient(transparent, white 20%, white 80%, transparent);
+  mask: linear-gradient(transparent, white 20%, white 80%, transparent); */
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  height: fit-content;
+  width: fit-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="downwards"] {
+  --_animation-direction: reverse;
+}
+
+.scroller[data-direction="upwards"] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-speed="slow"] {
+  --_animation-duration: 30s;
+}
+
+.scroller[data-speed="fast"] {
+  --_animation-duration: 10s;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(0, calc(-50% - 0.5rem));
+  }
+}

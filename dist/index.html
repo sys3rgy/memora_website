@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memora Home</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body class="min-h-screen w-full bg-secondaryLightest">
+    <header class="w-screen px-16 h-24 bg-secondary">
+      <nav class="flex flex-row justify-between items-center h-full">
+        <div class="flex w-40 justify-evenly items-center">
+          <div>
+            <img
+              src="/public/assets/logos/Memora Logo.svg"
+              alt="A Logo of Memora"
+            />
+          </div>
+          <div class="text-2xl font-chillaxBold text-primary">Memora</div>
+        </div>
+        <div class="h-full text-center flex">
+          <ul class="w-96 h-full flex items-center justify-evenly">
+            <li
+              class="text-white text-xl font-chillaxRegular h-full flex items-center"
+            >
+              <a class="" href="">About Us</a>
+            </li>
+            <li
+              class="text-white text-xl font-chillaxRegular bg-primary h-3/6 w-1/2 flex items-center justify-center rounded-3xl"
+            >
+              <a class="" href="">Start for Free</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section
+      class="flex justify-center items-center rounded-b-32 bg-secondary h-512"
+    >
+      <div class="w-920 h-412 p-2.5 flex flex-col justify-center items-center">
+        <div class="mb-16">
+          <img
+            class=""
+            src="/public/assets/logos/Memora Logo Large.svg"
+            alt="A large logo of Memora, with a stylized O in the shape of a camera."
+          />
+        </div>
+        <div class="text-primary text-4xl font-chillaxRegular mb-16">
+          <p>Collecting tiny moments with a single scan.</p>
+        </div>
+        <div class="flex gap-x-6">
+          <button
+            class="text-xl font-chillaxRegular bg-primary h-16 w-52 flex items-center justify-center rounded-3xl"
+          >
+            <a class="text-xl font-chillaxRegular text-white" href=""
+              >Start for free</a
+            >
+          </button>
+          <button
+            class="text-xl font-chillaxRegular h-16 w-52 flex items-center justify-center rounded-3xl border-solid border-2 border-primary"
+          >
+            <a class="text-primary text-xl font-chillaxRegular" href=""
+              >Learn more</a
+            >
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="h-640">
+      <div
+        class="flex flex-row justify-center items-start gap-7 overflow-hidden"
+      >
+        <div class="scroller" data-direction="upwards" data-speed="fast">
+          <div class="scroller__inner p-0">
+            <img
+              class="h-72 w-96 rounded-2xl"
+              src="/public/assets/photos/wedding/miguel-angel-hernandez-329z4QA8njs-unsplash.jpg"
+              alt=""
+            />
+            <img
+              class="h-72 w-96 rounded-2xl"
+              src="/public/assets/photos/wedding/amish-thakkar-REmCdjjUeB8-unsplash.jpg"
+              alt=""
+            />
+            <img
+              class="h-72 w-96 rounded-2xl"
+              src="/public/assets/photos/wedding/andreas-ronningen-S2YssLw97l4-unsplash.jpg"
+              alt=""
+            />
+            <img
+              class="h-72 w-96 rounded-2xl"
+              src="/public/assets/photos/wedding/jayden-seah-QzUJQc4bwyU-unsplash.jpg"
+              alt=""
+            />
+            <img
+              class="h-72 w-96 rounded-2xl"
+              src="/public/assets/photos/wedding/megat-irfan-cc2tvUl6fQI-unsplash.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="scroller" data-direction="downwards" data-speed="fast">
+          <div class="scroller__inner p-0">
+            <img
+              class="h-72 w-96 rounded-2xl"
+              src="/public/assets/photos/wedding/miguel-angel-hernandez-329z4QA8njs-unsplash.jpg"
+              alt=""
+            />
+            <img
+              class="h-72 w-96 rounded-2xl"
+              src="/public/assets/photos/wedding/amish-thakkar-REmCdjjUeB8-unsplash.jpg"
+              alt=""
+            />
+            <img
+              class="h-72 w-96 rounded-2xl"
+              src="/public/assets/photos/wedding/andreas-ronningen-S2YssLw97l4-unsplash.jpg"
+              alt=""
+            />
+            <img
+              class="h-72 w-96 rounded-2xl"
+              src="/public/assets/photos/wedding/jayden-seah-QzUJQc4bwyU-unsplash.jpg"
+              alt=""
+            />
+            <img
+              class="h-72 w-96 rounded-2xl"
+              src="/public/assets/photos/wedding/megat-irfan-cc2tvUl6fQI-unsplash.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex justify-center items-center flex-col gap-y-14">
+      <div
+        class="w-640 text-primaryLight font-chillaxMedium text-3xl text-center"
+      >
+        <p>Upload to share, save and see every occasion and moment</p>
+      </div>
+      <div
+        class="w-80 h-16 p-1 flex justify-between items-center gap-x-8 rounded-3xl bg-secondaryLight"
+      >
+        <!-- Left Arrow Button -->
+        <button id="leftArrow" class="arrow-button">
+          <img src="/public/assets/elements/leftArrow.svg" alt="" />
+        </button>
+
+        <!-- ContentText -->
+        <div id="contentText" class="text-white text-2xl font-chillaxMedium">
+          <p>Weddings</p>
+        </div>
+
+        <!-- Right Arrow Button -->
+        <button id="rightArrow" class="arrow-button">
+          <img src="/public/assets/elements/rightArrow.svg" alt="" />
+        </button>
+      </div>
+    </section>
+
+    <section class="h-640"></section>
+
+    <section class="h-640 bg-secondary"></section>
+
+    <section class="h-640 bg-secondary"></section>
+
+    <section class="h-640"></section>
+
+    <footer class="h-640 bg-primary"></footer>
+
+    <script src="/dist/main.js"></script>
+  </body>
+</html>
