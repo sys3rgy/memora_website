@@ -41,7 +41,7 @@
 }
 
 .scroller[data-speed="fast"] {
-  --_animation-duration: 5s;
+  --_animation-duration: 10s;
 }
 
 @keyframes scroll {

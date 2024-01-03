@@ -48,23 +48,11 @@ const categories = [
       "/public/assets/photos/wedding/andreas-ronningen-S2YssLw97l4-unsplash.jpg",
       "/public/assets/photos/wedding/jayden-seah-QzUJQc4bwyU-unsplash.jpg",
       "/public/assets/photos/wedding/megat-irfan-cc2tvUl6fQI-unsplash.jpg",
-      // Duplicating the images here fixes this issue. Why?
-      "/public/assets/photos/wedding/miguel-angel-hernandez-329z4QA8njs-unsplash.jpg",
-      "/public/assets/photos/wedding/amish-thakkar-REmCdjjUeB8-unsplash.jpg",
-      "/public/assets/photos/wedding/andreas-ronningen-S2YssLw97l4-unsplash.jpg",
-      "/public/assets/photos/wedding/jayden-seah-QzUJQc4bwyU-unsplash.jpg",
-      "/public/assets/photos/wedding/megat-irfan-cc2tvUl6fQI-unsplash.jpg",
     ],
   },
   {
     text: "Conferences",
     images: [
-      "/public/assets/photos/conference/jonny-gios-8wKTIZ1KEzY-unsplash.jpg",
-      "/public/assets/photos/conference/paul-hanaoka-6FqkGMOLskY-unsplash.jpg",
-      "/public/assets/photos/conference/alexandre-pellaes-6vAjp0pscX0-unsplash.jpg",
-      "/public/assets/photos/conference/teemu-paananen-bzdhc5b3Bxs-unsplash.jpg",
-      "/public/assets/photos/conference/wes-lewis-zt6OxRORM2g-unsplash.jpg",
-      // Duplicating the images here fixes this issue. Why?
       "/public/assets/photos/conference/jonny-gios-8wKTIZ1KEzY-unsplash.jpg",
       "/public/assets/photos/conference/paul-hanaoka-6FqkGMOLskY-unsplash.jpg",
       "/public/assets/photos/conference/alexandre-pellaes-6vAjp0pscX0-unsplash.jpg",
