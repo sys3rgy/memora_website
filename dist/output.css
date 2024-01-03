@@ -578,6 +578,10 @@ video {
   display: flex;
 }
 
+.h-72 {
+  height: 18rem;
+}
+
 .h-16 {
   height: 4rem;
 }
@@ -602,16 +606,16 @@ video {
   height: 40rem;
 }
 
-.h-72 {
-  height: 18rem;
-}
-
 .h-full {
   height: 100%;
 }
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.w-96 {
+  width: 24rem;
 }
 
 .w-1\/2 {
@@ -636,10 +640,6 @@ video {
 
 .w-920 {
   width: 57.85rem;
-}
-
-.w-96 {
-  width: 24rem;
 }
 
 .w-full {

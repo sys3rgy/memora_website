@@ -21,7 +21,9 @@ function addAnimation() {
   });
 }
 
-// Left and Right Arrow Buttons
+//// Change Image Category Functionality
+
+// Left and Right Buttons
 const leftArrow = document.getElementById("leftArrow");
 const rightArrow = document.getElementById("rightArrow");
 
@@ -59,3 +61,50 @@ const categories = [
     ],
   },
 ];
+
+let currentCategoryIndex = 0; // Initial category index
+
+// Set initial content and images
+setCategoryContent(categories[currentCategoryIndex]);
+
+// Event listeners for left and right arrow buttons
+leftArrow.addEventListener("click", () => changeCategory(-1));
+rightArrow.addEventListener("click", () => changeCategory(1));
+
+// Function to change the displayed category content and images
+function changeCategory(direction) {
+  currentCategoryIndex += direction;
+
+  // Wrap around to the first category if going beyond the last category
+  if (currentCategoryIndex >= categories.length) {
+    currentCategoryIndex = 0;
+  } else if (currentCategoryIndex < 0) {
+    currentCategoryIndex = categories.length - 1;
+  }
+
+  setCategoryContent(categories[currentCategoryIndex]);
+}
+
+// Function to set the content and images based on the selected category
+function setCategoryContent(category) {
+  // Set text in contentText
+  contentText.textContent = category.text;
+
+  // Set images in scroller__inner for both scrollers
+  setScrollerImages(scrollerUpwards, category.images);
+  setScrollerImages(scrollerDownwards, category.images);
+}
+
+// Function to set images in a scroller__inner
+function setScrollerImages(scroller, images) {
+  const scrollerInner = scroller.querySelector(".scroller__inner");
+  scrollerInner.innerHTML = ""; // Clear existing images
+
+  images.forEach((imageSrc) => {
+    const imgElement = document.createElement("img");
+    imgElement.src = imageSrc;
+    imgElement.alt = "";
+    imgElement.classList.add("h-72", "w-96", "rounded-2xl");
+    scrollerInner.appendChild(imgElement);
+  });
+}
